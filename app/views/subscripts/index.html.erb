@@ -1,0 +1,18 @@
+<h1 id= "h1">INSCRIÇÃO SUPER DESENVOLVEDOR</h1>
+<h2 id= "h2"> Seu futuro esta aqui</h2>
+<table id="subscripts">
+  <tr>
+    <th>#</th>
+    <th>Nome</th>
+    <th>Linguagem de Programação</th>
+    <th>Escolaridade</th>
+  </tr>
+  <% @subscripts.each do |subscript| %>
+    <tr>
+      <td> <%= subscript.id %> </td>
+      <td> <%= subscript.name %> </td>
+      <td> <%= subscript.language %> </td>
+      <td> <%= subscript.schooling %> </td>
+    </tr>
+    <%end%>
+</table>
